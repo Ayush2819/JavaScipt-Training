@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Combine Multiple Cases in a Switch Case Statement</title>
+</head>
+<body>
+    
+  <script> 
+   var d = new Date();      
+   switch(d.getDay()) {       
+      case 0:           
+       document.write("Today is Sunday.");
+                   break; 
+              case 1: 
+                   document.write("Today is Monday.");     
+                break;        case 2:
+                      document.write("Today is Tuesday.");
+                      break;  
+                case 3:
+                      document.write("Today is Wednesday."); 
+                     break;
+                   case 4:
+                       document.write("Today is Thursday."); 
+                      break; 
+                   case 5:
+                         document.write("Today is Friday.");   
+                      break; 
+                     case 6:
+                           document.write("Today is Saturday.");    
+                       break;           default:  
+                         document.write("No information available for that day.");  
+                         break;   
+                }
+                    </script>
+
+
+
+
+<script>  
+  var d = new Date();   
+ switch(d.getDay()) {       
+      case 1:
+        case 2:
+          case 3: 
+        case 4:     
+         case 5: 
+      document.write("It is a weekday.");      
+      break;   
+      case 0:     
+   case 6: 
+      document.write("It is a weekend day.");
+              break;  
+        default: 
+           document.write("Enjoy every day of your life."); 
+    }   
+   </script>
+
+
+</body>
+</html>

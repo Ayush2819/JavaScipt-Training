@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays2demo</title>
+</head>
+<body>
+    <script>
+
+        var fruits = ['apple', 'orange', 'kiwi']; alert(fruits[1]);
+        document.write("The Size of array \'fruits\' is : " + fruits.length + '<br>');// add elements to end of array
+        fruits[3] = 'banana'; fruits[fruits.length] = 'cherry'; fruits.push('grape');// add elements to begining of array
+        fruits.unshift('blackberry'); document.write('<br>' + "-------------------------------------------------" + '<br>')// iteration tru arrays in js
+        document.write("The Array contents are: " + '<br>');
+        for (i = 0; i < fruits.length; i++) {
+            document.write(fruits[i]);
+            document.write('<BR/>');
+        }
+
+        document.write('<br>' + "-------------------------------------------------" + '<br>');
+        document.write("The Array contents after sorting : " + '<br>'); fruits.sort();// for in loop -- iterate tru arrays/objects 
+        var text = '';
+        for (var i in fruits) {
+            text += fruits[i];
+            text += '\n';
+            document.writeln(fruits[i]);
+        }
+        document.writeln(text);
+        </script>
+</body>
+</html>
